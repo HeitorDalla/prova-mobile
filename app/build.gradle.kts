@@ -4,11 +4,7 @@ plugins {
 
 android {
     namespace = "com.heitor.prova"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.heitor.prova"
@@ -29,6 +25,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -42,6 +39,5 @@ dependencies {
     implementation("androidx.recyclerview:recyclerview:1.3.2")
 
     implementation("androidx.room:room-runtime:2.6.1")
-    implementation(libs.room.common.jvm)
     annotationProcessor("androidx.room:room-compiler:2.6.1")
 }
