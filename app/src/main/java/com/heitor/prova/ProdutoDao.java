@@ -10,8 +10,8 @@ import java.util.List;
 public interface ProdutoDao {
 
     @Insert
-    void insert(Produto product);
+    void insert(Produto produto);
 
     @Query("SELECT * FROM produto ORDER BY nome ASC")
-    List<Produto> getAllProducts();
+    List<Produto> getAllProdutos();
 }
