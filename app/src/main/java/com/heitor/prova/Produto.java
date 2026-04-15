@@ -3,7 +3,7 @@ package com.heitor.prova;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity
+@Entity(tableName = "produto")
 public class Produto {
 
     @PrimaryKey(autoGenerate = true)
