@@ -33,6 +33,7 @@ public class ProdutoAdapter extends RecyclerView.Adapter<ProdutoAdapter.ProdutoV
         holder.tvNome.setText("Nome: " + produto.getNome());
         holder.tvCodigo.setText("Código: " + produto.getCodigo());
         holder.tvPreco.setText(String.format(Locale.getDefault(), "Preço: R$ %.2f", produto.getPreco()));
+        holder.tvQuantidade.setText("Qtd: " + produto.getQuantidade());
     }
 
     @Override
@@ -42,13 +43,14 @@ public class ProdutoAdapter extends RecyclerView.Adapter<ProdutoAdapter.ProdutoV
 
     public static class ProdutoViewHolder extends RecyclerView.ViewHolder {
 
-        TextView tvNome, tvCodigo, tvPreco;
+        TextView tvNome, tvCodigo, tvPreco, tvQuantidade;
 
         public ProdutoViewHolder(@NonNull View itemView) {
             super(itemView);
             tvNome = itemView.findViewById(R.id.tvNome);
             tvCodigo = itemView.findViewById(R.id.tvCodigo);
             tvPreco = itemView.findViewById(R.id.tvPreco);
+            tvQuantidade = itemView.findViewById(R.id.tvQuantidade);
         }
     }
 }

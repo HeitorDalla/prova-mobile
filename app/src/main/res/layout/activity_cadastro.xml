@@ -37,8 +37,9 @@
             android:id="@+id/etPreco"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Preço"
+            android:hint="Preço (ex: 10,50)"
             android:inputType="numberDecimal"
+            android:digits="0123456789.,"
             android:layout_marginBottom="16dp" />
 
         <EditText
